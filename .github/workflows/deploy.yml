@@ -23,14 +23,6 @@ jobs:
         with:
           node-version: "16" # Set this to your Node.js version
 
-      # Install dependencies
-      - name: Install dependencies
-        run: npm install
-
-      # Build your project if necessary
-      - name: Build
-        run: npm run build
-
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
         env:
