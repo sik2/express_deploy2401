@@ -48,7 +48,7 @@ app.get("/api/v1/todos", async (req, res) => {
         );
 
         res.json({
-            resultCode: "S-1",
+            resultCode: "S-11",
             msg: "성공",
             data: rows,
         });
