@@ -32,7 +32,7 @@ app.use(express.json());
 const port = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.send("Hello World!!!");
 });
 
 
@@ -48,7 +48,7 @@ app.get("/api/v1/todos", async (req, res) => {
         );
 
         res.json({
-            resultCode: "S-11",
+            resultCode: "S-1",
             msg: "성공",
             data: rows,
         });
